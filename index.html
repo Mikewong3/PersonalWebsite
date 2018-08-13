@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Personal Website</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="header">
+      <ul>
+        <li>
+          <a id="nav-links">Mike Wong</a>
+        </li>
+        <li>
+          <a id="nav-links" href="#box-1">Skills</a>
+        </li>
+        <li>
+          <a id="nav-links">Project</a>
+        </li>
+        <li>
+          <a id="nav-links">Experience</a>
+        </li>
+      </ul>
+    </div>
+    <div class="banner"></div>
+    <div class="Mike-Wong"></div>
+    <div class="box-1">
+      <div class="Skills">
+        <img src="img\java-img.png" onclick="displayInfo('java')"/>
+      </div>
+      <div class="Skills"  onclick="displayInfo('c')">
+        <img src="img\c-img.png"/>
+      </div>
+      <div class="Skills"  onclick="displayInfo('html')">
+        <img src="img\html-img.png"/>
+      </div>
+      <div class="Skills" onclick="displayInfo('css')">
+        <img src="img\css-img.png"/>
+      </div>
+      <div class="Skills" onclick="displayInfo('javascript')">
+        <img src="img\javascript-img.png"/>
+      </div>
+      <div class="Skills-info"><img id="exit-button" src="img/exit-img.png" onclick="closeSkillInfo()"/><p></p></div>
+    </div>
+    <div class="Project"></div>
+    <div class="Experience"></div>
+    <div onscroll="headerAppearence()"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
