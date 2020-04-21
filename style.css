@@ -154,7 +154,7 @@ body {
   justify-content: center;
 }
 .Project-box {
-  height: 90%;
+  height: 100%;
   flex-basis: 50%;
 }
 .Project-box img {

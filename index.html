@@ -11,13 +11,17 @@
     <div class="header">
       <ul>
         <li>
-          <a id="nav-links">Mike Wong</a>
+          <a id="nav-links" onclick="jumpToSkills('Personal')">Mike Wong</a>
         </li>
         <li>
-          <a id="nav-links" href="#box-1">Skills</a>
+          <a id="nav-links" onclick="jumpToSkills('SkillsSection')">
+            Skills
+          </a>
         </li>
         <li>
-          <a id="nav-links">Projects</a>
+          <a id="nav-links" onclick="jumpToSkills('ProjectSection')"
+            >Projects</a
+          >
         </li>
         <li id="float-right">
           <a id="nav-links">Contact</a>
@@ -31,7 +35,7 @@
         tempor incididunt ut labore et dolore magna aliqua. Ut
       </p>
     </div>
-    <div class="Mike-Wong">
+    <div class="Mike-Wong" id="Personal">
       <div class="profile-picture">
         <img src="img\profile.jpg" />
         <p>
@@ -45,7 +49,7 @@
         </p>
       </div>
     </div>
-    <div class="box-1">
+    <div class="box-1" id="SkillsSection">
       <div class="Skills">
         <img src="img\java-img.png" onclick="displayInfo('java')" />
       </div>
@@ -70,8 +74,7 @@
         <p></p>
       </div>
     </div>
-    <div class="Project">
-      <H1>Personal Projects</H1>
+    <div class="Project" id="ProjectSection">
       <div class="Project-box">
         <img src="img\DNA-img.jpg" />
         <p>
